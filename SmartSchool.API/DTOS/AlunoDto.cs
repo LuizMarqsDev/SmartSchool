@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace SmartSchool.API.DTOS
 {
+
     public class AlunoDto
     {
         public int Id { get; set; }

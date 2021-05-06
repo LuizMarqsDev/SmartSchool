@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartSchool.API</name>
+    </assembly>
+    <members>
+        <member name="T:SmartSchool.API.Controllers.AlunoController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.AlunoController.#ctor(SmartSchool.API.Data.IRepository,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.AlunoController.Get">
+            <summary>
+            Método responsável por retornar todos os alunos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.AlunoController.GetRegister">
+            <summary>
+            Método responsável por retornar apenas único aluno dto
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.AlunoController.GetById(System.Int32)">
+            <summary>
+            Método responsável por retornar apenas único aluno por meio do ID 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.AlunoController.Post(SmartSchool.API.DTOS.AlunoRegistratDto)">
+            <summary>
+            Método responsável por adicionar um aluno
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.AlunoController.Put(System.Int32,SmartSchool.API.DTOS.AlunoRegistratDto)">
+            <summary>
+            Método responsável por atualizar um aluno
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.AlunoController.Patch(System.Int32,SmartSchool.API.DTOS.AlunoRegistratDto)">
+            <summary>
+            Método responsável por correção de campos específicos de um aluno
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.AlunoController.Delete(System.Int32)">
+            <summary>
+            Método responsável por deletar um aluno
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartSchool.API.Controllers.ProfessorController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.ProfessorController.#ctor(SmartSchool.API.Data.IRepository,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.ProfessorController.Get">
+            <summary>
+            Método responsável por retornar todos os professores
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.ProfessorController.GetRegister">
+            <summary>
+            Método responsável por retornar apenas único professor dto
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.ProfessorController.GetById(System.Int32)">
+            <summary>
+             Método responsável por retornar apenas único professor por meio de um ID 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.ProfessorController.Post(SmartSchool.API.DTOS.ProfessorRegistrarDto)">
+            <summary>
+            Método responsável por adicionar um professor
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.ProfessorController.Put(System.Int32,SmartSchool.API.DTOS.ProfessorRegistrarDto)">
+            <summary>
+            Método responsável por atualizar um professor
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.ProfessorController.Patch(System.Int32,SmartSchool.API.DTOS.ProfessorRegistrarDto)">
+            <summary>
+            Método responsável por corrigir campos específicos de um professor
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.Controllers.ProfessorController.Delete(System.Int32)">
+            <summary>
+             Método responsável por deletar um professor
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
