@@ -14,7 +14,7 @@ namespace SmartSchool.API.Controllers
 {   /// <summary>
     /// 
     /// </summary>
-    [Route("api/v{version:apiVersion}[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiVersion("2.0")]
     [ApiController]
     public class ProfessorController : ControllerBase
@@ -63,7 +63,7 @@ namespace SmartSchool.API.Controllers
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            var professor = _repo.GetAlunoById(id, false);
+            var professor = _repo.GetProfessorById(id, false);
             if (professor == null) return BadRequest("O professor não foi encontrado");
 
             var professorDto = _mapper.Map<ProfessorDto>(professor);
@@ -84,7 +84,7 @@ namespace SmartSchool.API.Controllers
             _repo.Add(prof);
             if (_repo.SaveChanges())
             {
-                return Created($"/api/professor/{model.Id}", _mapper.Map<ProfessorDto>(prof)); return Ok(prof);
+                return Created($"/api/professor/{model.Id}", _mapper.Map<ProfessorDto>(prof));
             }
 
             return BadRequest("Professor não cadastrado");
